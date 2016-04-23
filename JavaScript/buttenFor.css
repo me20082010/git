@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+.inline-block{
+    display:inline-block;
+    width: 200px;
+    height: 80px;
+}
+.float{
+
+    width:200px;
+    height:80px;
+    float: left;
+
+}
+#hello{
+    background: greenyellow;
+    clear:left;
+}

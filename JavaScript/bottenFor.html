@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>buttenFor</title>
+    <link rel="stylesheet" type="text/css" href="./buttenFor.css">
+</head>
+<body>
+<div>
+    <div id="button1" class="inline-block" style="background:red">button1</div>
+    <div id="button2" class="inline-block" style="background:blue">button2</div>
+    <div id="button3" class="inline-block" style="background:green">button3</div>
+</div>
+<!--<div style="height: 80px">-->
+<div>
+    <div id="button4" class="float" style="background:red">button4</div>
+    <div id="button5" class="float" style="background:blue">button5</div>
+    <div id="button6" class="float" style="background:green">button6</div>
+</div>
+<div id="hello" >hello</div>
+<script>
+
+//    for(var i=1;i<7;i++)
+//    {
+//        document.getElementById("button"+i).addEventListener("click",function(){alert("你点击的是"+i);})
+//    }
+
+
+//    for(var i=1;i<7;i++)
+//    {
+//
+//        document.getElementById("button"+i).addEventListener("click",function(e){var j=i;alert(this.id);})
+//    }
+
+//for(var i=1;i<7;i++)
+//{
+//
+//    document.getElementById("button"+i).addEventListener("click",function(e){alert(this.id);})
+//}
+
+
+//for(var i=1;i<7;i++)
+//{
+//
+//    document.getElementById("button"+i).addEventListener("click",wichOne(i))
+//
+//}
+//   function wichOne(i){alert("你点击的是："+i);}
+
+//全部不点击直接输出
+// /for(var i=1;i<7;i++)
+//{
+//
+//    var targetObj=document.getElementById("button"+i);
+//    addLinsener(targetObj,i)
+//
+//}
+//function wichOne(i){alert("你点击的是："+i);}
+//function addLinsener(targetObj,i){targetObj.addEventListener("click",wichOne(i))}
+
+
+//正确输出
+//for(var i=1;i<7;i++)
+//{
+//
+//    var targetObj=document.getElementById("button"+i);
+//    addLinsener(targetObj,i)
+//
+//}
+//function addLinsener(targetObj,i){targetObj.onclick = function () {//为anchor添加单击事件
+//    alert("你点击的是：" + i);}}
+
+
+
+ for(var i=1;i<7;i++)
+{
+
+    var targetObj=document.getElementById("button"+i);
+    addLinsener(targetObj,i)
+
+}
+function wichOne(i){alert("你点击的是："+i);}
+function addLinsener(targetObj,i){targetObj.addEventListener("click",function () {wichOne(i);})}
+
+</script>
+</body>
+</html>
